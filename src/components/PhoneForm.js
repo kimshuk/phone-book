@@ -37,9 +37,7 @@ class PhoneForm extends Component {
           onChange={this.handleChange}
           name="phone"
         />
-        <h1>
-          {this.state.name} {this.state.phone}
-        </h1>
+        <button type="submit">등록</button>
       </form>
     );
   }
