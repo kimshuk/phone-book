@@ -24,7 +24,7 @@ class PhoneForm extends Component {
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <input
           placeholder="Name"
           value={this.state.name}
@@ -37,7 +37,7 @@ class PhoneForm extends Component {
           onChange={this.handleChange}
           name="phone"
         />
-        <button type="submit">등록</button>
+        <button type="submit">Submit</button>
       </form>
     );
   }
