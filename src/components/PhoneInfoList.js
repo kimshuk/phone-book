@@ -9,7 +9,6 @@ class PhoneInfoList extends Component {
   };
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.log("next", nextProps.data);
     return nextProps.data !== this.props.data;
   }
 
