@@ -19,6 +19,13 @@ class App extends Component {
     ]
   };
 
+  handleCreate = data => {
+    const { information } = this.state;
+    this.setState({
+      information: information.concat({ id: this.id++, ...data })
+    });
+  };
+
   handleRemove = id => {
     const { information } = this.state;
     this.setState({
@@ -43,7 +50,7 @@ class App extends Component {
         <PhoneInfoList
           data={this.state.information}
           onRemove={this.handleRemove}
-          onUpdate={this.handleUpdate}
+          onUpdate=
         />
       </div>
     );
